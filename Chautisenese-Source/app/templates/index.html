@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script defer src="{{ url_for('static', filename='flashcards.js') }}"></script>
+</head>
+<body>
+    <h1>Flashcards</h1>
+    <div id="flashcard-container">
+        <div id="flashcard" onclick="flipCard()">
+            <div id="card-content">Loading...</div>
+        </div>
+    </div>
+</body>
+</html>

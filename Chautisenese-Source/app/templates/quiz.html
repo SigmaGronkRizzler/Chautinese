@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script defer src="{{ url_for('static', filename='quiz.js') }}"></script>
+</head>
+<body>
+    <h1>Language Quiz</h1>
+    <div id="quiz-container">
+        <p id="question">Loading question...</p>
+        <ul id="options"></ul>
+        <button id="next-button" onclick="nextQuestion()" style="display: none;">Next</button>
+        <p id="result" style="font-weight: bold; margin-top: 20px;"></p>
+    </div>
+</body>
+</html>
